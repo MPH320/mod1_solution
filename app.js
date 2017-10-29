@@ -15,7 +15,7 @@
 			var wordArray = [];
 			console.log($scope.typedText);
 			
-			if ($scope.typedText == undefined){
+			if ($scope.typedText == undefined || $scope.typedText == ""){
 				$scope.message = "Please enter data first";
 			} else {
 				wordArray = $scope.typedText.split(',');
